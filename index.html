@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calendar">
+        <h1>Calendario 2025</h1>
+        <div id="months">
+            <button onclick="showMonth(0)">Enero</button>
+            <button onclick="showMonth(1)">Febrero</button>
+            <button onclick="showMonth(2)">Marzo</button>
+            <button onclick="showMonth(3)">Abril</button>
+            <button onclick="showMonth(4)">Mayo</button>
+            <button onclick="showMonth(5)">Junio</button>
+            <button onclick="showMonth(6)">Julio</button>
+            <button onclick="showMonth(7)">Agosto</button>
+            <button onclick="showMonth(8)">Septiembre</button>
+            <button onclick="showMonth(9)">Octubre</button>
+            <button onclick="showMonth(10)">Noviembre</button>
+            <button onclick="showMonth(11)">Diciembre</button>
+        </div>
+        <div id="calendar-container"></div>
+    </div>
+
+    <!-- Ventana emergente para agregar notas -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Agregar evento o nota</h2>
+            <textarea id="event-note" placeholder="Escribe tu nota aquí..."></textarea>
+            <button onclick="saveNote()">Guardar Nota</button>
+            <button onclick="closePopup()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
